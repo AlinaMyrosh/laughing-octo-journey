@@ -8,27 +8,52 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-CZCqCKWq.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-DumFYO8Z.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CDQLSh4u.css">
+    <script type="module" crossorigin src="/laughing-octo-journey/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/laughing-octo-journey/assets/vendor-CZCqCKWq.js">
+    <link rel="stylesheet" crossorigin href="/laughing-octo-journey/assets/vendor-DumFYO8Z.css">
+    <link rel="stylesheet" crossorigin href="/laughing-octo-journey/assets/index-CDQLSh4u.css">
   </head>
   <body>
-    <form class="form" novalidate>
-      <label>
-        <input
-          type="text"
-          name="search-text"
-          placeholder="Search images..."
-          required
-        />
-      </label>
-      <button type="submit">Search</button>
-    </form>
+    <section class="footer">
+      <div class="footer-upper">
+        <img src="/laughing-octo-journey/assets/lloyd-jefferson-min-snuB7rsv.jpg" alt="" />
+        <h2 class="footer-title">Let’s work together</h2>
+      </div>
 
-    <ul class="gallery"></ul>
+      <form class="footer-form">
+        <label>
+          <input
+            class="work-together-input-email"
+            name="userEmail"
+            id="user-email"
+            type="email"
+            placeholder="clients@gmail.com"
+            required
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+        </label>
+        <label>
+          <textarea
+            class="work-together-input-message"
+            name="userComment"
+            id="user-comment"
+            minlength="3"
+            placeholder="comments"
+            required
+          ></textarea>
+        </label>
 
-    <span class="loader visually-hidden"></span>
+        <button type="submit" class="footer-btn">Send</button>
+      </form>
 
+      <address class="footer-contacts">
+        <ul class="footer-contacts-list">
+          <li class="footer-email"></li>
+          <li class="footer-phone"></li>
+        </ul>
+      </address>
+
+      <span class="loader visually-hidden"></span>
+    </section>
   </body>
 </html>
