@@ -4,23 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GOIT-JS-HW-11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500..600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <section class="footer">
-      <div class="footer-upper">
-        <img src="img/lloyd-jefferson-min.jpg" alt="" />
-        <h2 class="footer-title">Let’s work together</h2>
-      </div>
+      <div class="container">
+        <h2 class="footer-title">
+          <img
+            class="footer-image"
+            src="img/lloyd-jefferson-min.jpg"
+            alt="Lloyd Jefferson small photo"
+          />Let’s <span>work</span> together
+        </h2>
 
-      <form class="footer-form">
-        <label>
+        <form class="footer-form">
           <input
-            class="work-together-input-email"
+            class="footer-input footer-email-input"
             name="userEmail"
             id="user-email"
             type="email"
@@ -28,30 +33,37 @@
             required
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
-        </label>
-        <label>
-          <textarea
-            class="work-together-input-message"
+          <input
+            class="footer-input footer-comment-input"
             name="userComment"
             id="user-comment"
             minlength="3"
             placeholder="comments"
             required
-          ></textarea>
-        </label>
+          />
 
-        <button type="submit" class="footer-btn">Send</button>
-      </form>
+          <button type="submit" class="footer-btn">Send</button>
+        </form>
 
-      <address class="footer-contacts">
-        <ul class="footer-contacts-list">
-          <li class="footer-email"></li>
-          <li class="footer-phone"></li>
-        </ul>
-      </address>
+        <address class="footer-contacts">
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a class="footer-link" href="mailto:lloydjefferson@gmail.com"
+                >lloydjefferson@gmail.com</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a class="footer-link" href="tel:+3801111111111"
+                >+380 11 1111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
 
-      <span class="loader visually-hidden"></span>
+        <span class="loader visually-hidden"></span>
+      </div>
     </section>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
